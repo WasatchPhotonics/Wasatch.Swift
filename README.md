@@ -36,8 +36,8 @@ then a ⌘-B to build the framework and find the problematic line.
 
 XCode note: make following patch in Chart.swift:
 
-< lineLayer.lineJoin = kCALineJoinBevel
-> lineLayer.lineJoin = CAShapeLayerLineJoin.bevel
+    < lineLayer.lineJoin = kCALineJoinBevel
+    > lineLayer.lineJoin = CAShapeLayerLineJoin.bevel
 
 # References
 
@@ -70,14 +70,9 @@ discoverable, and that characteristics could be read and written:
 
 # Rendered Documentation
 
-If you have `jazzy` installed and SSH keys configured to mco.wasatchphotonics.com,
-just type this:
+If you have `jazzy` installed, just type this:
 
     $ make docs
-
-This will render Markdown source documentation to:
-
-- https://mco.wasatchphotonics.com/doc/SiGDemo
 
 # Backlog
 
