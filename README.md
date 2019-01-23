@@ -1,7 +1,8 @@
+![Scope Mode](https://github.com/WasatchPhotonics/Wasatch.Swift/raw/master/screenshots/SiGDemo-scope.png)
+
 # Overview
 
-A simple BLE app talking to the SiG spectrometer.
-(Specifically, talking to a TI CC2640R2FRGZR BLE chip.)
+A simple iPhone app controlling a Wasatch Photonics SiG-785 Raman spectrometer.
 
 # Building
 
@@ -32,6 +33,11 @@ then a ⌘-B to build the framework and find the problematic line.
 ## Charting
 
 - [SwiftChart](https://github.com/gpbl/SwiftChart)
+
+XCode note: make following patch in Chart.swift:
+
+< lineLayer.lineJoin = kCALineJoinBevel
+> lineLayer.lineJoin = CAShapeLayerLineJoin.bevel
 
 # References
 
@@ -163,3 +169,5 @@ This will render Markdown source documentation to:
     - first spectrum read from live spectrometer
 - 2018-11-12 0.1.0
     - initial storyboard stubs
+
+![Pairing](https://github.com/WasatchPhotonics/Wasatch.Swift/raw/master/screenshots/SiGDemo-pair.png)

@@ -23,7 +23,7 @@ class AppSettings : NSObject, NSCoding
     static let archiveURL = documentsDirectory.appendingPathComponent("SiGDemoAppSettings")
     
     // not sure I want to get into official Xcode / App Store versioning yet
-    static let version = "1.0.2"
+    static let version = "1.1.0"
     
     var uuidToSerial : [String:String] = [:]
     var lastUUID : String?
